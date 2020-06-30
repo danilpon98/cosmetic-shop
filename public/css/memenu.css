@@ -1,0 +1,329 @@
+.menu-container {
+    font-size: 16px;
+    margin: 0 auto;
+     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; 
+}
+
+div.menu{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.menu > ul{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.menu-mobile {
+    display: none;
+    padding: 10px 20px 15px 0px;
+    outline: none;
+    position: relative;
+}
+
+.menu-mobile:hover {
+    text-decoration: none;
+}
+
+.menu-mobile:hover::after {
+    color: #fb9dab;
+}
+
+.menu-mobile:after {
+    content: "\f0c9";
+    font-family: 'FontAwesome';
+    font-size: 2.5rem;
+    padding: 0;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+
+.menu-dropdown-icon::before {
+    content: "\f067";
+    font-family: 'FontAwesome';
+    display: none;
+    cursor: pointer;
+    float: right;
+    padding: 1.5em 2em;
+    background: #e77d8d;
+    color: #333;
+}
+
+.menu-dropdown-icon:hover::after{
+    opacity: 1;
+}
+
+
+/* .menu-dropdown-icon::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #000 transparent;
+    position: absolute; 
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    opacity: 0;
+    -webkit-transition: opacity 0.15s;
+    -o-transition: opacity 0.15s;
+    transition: opacity 0.15s;
+} */
+
+.menu > ul {
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+    box-sizing: border-box;
+}
+
+.menu > ul:before,
+.menu > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul:after {
+    clear: both;
+}
+
+.menu > ul > li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    border: 2px solid transparent;
+}
+
+.menu > ul > li a {
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    color: #fff;
+    outline: none;
+    font-weight: 600;
+}
+
+.menu > ul > li > a:hover {
+    color: #fb9dab;
+}
+
+.menu > ul > li > ul {
+    display: none;
+    width: 100%;
+    background: #1d1c21;
+    padding: 20px;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul > li > ul:after {
+    clear: both;
+}
+
+.menu > ul > li > ul > li {
+    margin: 0;
+    padding-bottom: 0;
+    list-style: none;
+    width: 25%;
+    background: none;
+    float: left;
+}
+
+.menu > ul > li > ul > li a {
+    color: #fff;
+    padding: .2em 0;
+    width: 95%;
+    display: block;
+    border-bottom: 1px solid #343339;
+}
+
+.menu > ul > li > ul > li > ul >li:hover a {
+    color: #fb9dab;
+}
+
+.menu > ul > li > ul > li:not(:last-child){
+    padding-right: 5px;
+}
+
+.menu > ul > li > ul > li > ul {
+    display: block;
+    padding: 0;
+    margin: 10px 0 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+    content: "";
+    display: table;
+}
+
+.menu > ul > li > ul > li > ul:after {
+    clear: both;
+}
+
+.menu > ul > li > ul > li > ul > li {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+    font-size: .8em;
+}
+
+.menu > ul > li > ul > li > ul > li a {
+    border: 0;
+}
+
+.menu > ul > li > ul.normal-sub {
+    width: 600px;
+    left: auto;
+    padding: 10px 20px;
+}
+
+.menu > ul > li > ul.normal-sub > li {
+    width: 50%;
+}
+
+.menu > ul > li > ul.normal-sub > li a {
+    border: 0;
+    padding: 10px 0;
+}
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media only screen and (max-width: 992px) {
+    .header-bottom .menu{
+    }
+    .menu-container {
+        width: 100%;
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .menu-dropdown-icon:before {
+        display: block;
+    }
+    .menu > ul {
+        display: none;
+    }
+    .menu > ul > li {
+        width: 100%;
+        float: none;
+        display: block;
+        border-bottom: none;
+    }
+    .menu > ul > li:hover {
+        border-bottom: none;
+    }
+
+    .menu > ul > li:hover > a,
+    .menu > ul > li > ul > li:hover a
+    {
+        color: #000;
+    }
+    .menu > ul > li a {
+        padding: 1.5em;
+        width: 100%;
+        display: block;
+    }
+    .menu > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul.normal-sub {
+        width: 100%;
+        padding-left: 45px;
+        background-color: #e77d8d;
+    }
+    .menu > ul > li > ul > li {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .menu > ul > li > ul > li:first-child {
+        margin: 0;
+    }
+    .menu > ul > li > ul > li > ul {
+        position: relative;
+    }
+    .menu > ul > li > ul > li > ul > li {
+        float: none;
+    }
+    .menu .show-on-mobile {
+        display: block !important;
+        background-color: #fb9dab;
+    }
+    .menu-container {
+        display: block;
+    }
+    
+   .menu-container>div.menu{
+        display: block;
+    }
+
+    .menu-dropdown-icon::after{
+        display: none;
+    }
+
+    .menu-dropdown-icon{
+        position: relative;
+    }
+
+    .menu > ul > li > ul > li:hover a {
+        color: #fff;
+    }
+
+    .menu > ul > li > ul > li > ul > li:hover a {
+        color: #1d1c21;
+    }
+
+    .menu > ul > li > ul {
+        background: #e77d8d;
+    }
+
+    .menu > ul > li > ul > li a{
+        border-color: #fb9dab;
+    }
+
+}

@@ -1,0 +1,47 @@
+a:2:{s:4:"data";s:1652:"<li>
+    <a href="category/vitrina">Витрина</a>
+            <ul>
+            <li>
+    <a href="category/lico">Лицо</a>
+            <ul>
+            <li>
+    <a href="category/bronzator">Бронзатор</a>
+    </li><li>
+    <a href="category/konsiler">Консилер</a>
+    </li><li>
+    <a href="category/korrektor">Корректор</a>
+    </li><li>
+    <a href="category/kushon">Кушон</a>
+    </li>        </ul>
+    </li><li>
+    <a href="category/glaza">Глаза</a>
+            <ul>
+            <li>
+    <a href="category/bazy-i-praymery-pod-teni">Базы и праймеры под тени</a>
+    </li><li>
+    <a href="category/karandashi-dlya-glaz">Карандаши для глаз</a>
+    </li><li>
+    <a href="category/podvodka-dlya-glaz">Подводка для глаз</a>
+    </li>        </ul>
+    </li><li>
+    <a href="category/guby">Губы</a>
+            <ul>
+            <li>
+    <a href="category/bal-zamy-dlya-gub">Бальзамы для губ</a>
+    </li><li>
+    <a href="category/bleski-dlya-gub">Блески для губ</a>
+    </li><li>
+    <a href="category/glitter-dlya-gub">Глиттер для губ</a>
+    </li>        </ul>
+    </li><li>
+    <a href="category/brovi">Брови</a>
+            <ul>
+            <li>
+    <a href="category/gel-dlya-brovey">Гель для бровей</a>
+    </li><li>
+    <a href="category/karandash-dlya-brovey">Карандаш для бровей</a>
+    </li><li>
+    <a href="category/teni-dlya-brovey">Тени для бровей</a>
+    </li>        </ul>
+    </li>        </ul>
+    </li>";s:8:"end_time";i:1557810009;}
