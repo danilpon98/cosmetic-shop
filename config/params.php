@@ -7,8 +7,8 @@ return [
     'smtp_host' => 'smtp.timeweb.ru',
     'smtp_port' => '465',
     'smtp_protocol' => 'ssl',
-    'smtp_login' => 'cosmetic@cj11340.tmweb.ru',
-    'smtp_password' => 'Terb5433h',
+    'smtp_login' => '',
+    'smtp_password' => '',
     'img_width' => 700,
     'img_height' => 612,
 ];
